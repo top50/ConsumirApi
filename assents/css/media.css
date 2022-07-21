@@ -1,5 +1,16 @@
 @media(max-width:64rem){
+    .container{
+        padding-left: 0;
+        padding-right: 0;
+    }
     .card_anime{
         margin: 14px;
+    }
+  .card_pers{
+    width: 100%;
+  
+    }
+    .card_anime{
+width: 150px;
     }
 }
