@@ -1,0 +1,182 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+body{
+    font-family: 'Ubuntu', sans-serif;
+    background: #1e1e1e;
+}
+header{
+    background-image: linear-gradient(to right top, hsla(284, 62%, 43%, 0.661), hsla(278, 72%, 43%, 0.615), hsla(272, 81%, 44%, 0.609), hsla(265, 86%, 46%, 0.615), hsla(253, 86%, 50%, 0.615)), url('../img/bg_rick.jpg');
+    height: 400px;
+    margin-bottom: 15px;
+    width: 100%;
+    overflow: hidden;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+footer{
+    background-image: linear-gradient(to right top, #2d0a39, #2c0a3f, #290b46, #250c4d, #1d0e55);
+    height: 15vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.foo_card{
+color: white;
+text-align: center;
+}
+.foo_card h2{
+    font-size: 25px;
+}
+.foo_card h4{
+    font-size: 20px;
+    font-weight: 300;
+}
+.texto__title{
+font-size: 3rem;
+color: aqua;
+text-shadow: 1px 2px 6px #d4ff00;
+animation: texto infinite;
+animation-duration: 5s;
+}
+@keyframes texto {
+   25%{
+    text-shadow: 1px 2px 6px #b3d701;
+   } 
+   50%{
+    text-shadow: 1px 2px 9px #aac717;
+   }
+   100%{
+    text-shadow: 1px 2px 12px #b3ff00;
+   }
+}
+.container{
+    width: 100%;
+    margin:0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.row{
+    max-width: 69rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: 0 auto;
+}
+.card_pers {
+    max-width: 68rem;
+    transition: .5s;
+    padding: 5px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    animation: cargar transition 5s;
+}
+
+@keyframes cargar {
+    50%{
+        transition: all 5s;
+    }
+    100%{
+        transition: all 2s;
+    }
+}
+.card_anime{
+    width: 250px;
+    margin:5px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    border-radius: 8px;
+    background: #fbffe6;
+    transition: ease-out .5s;
+}
+.card_anime:hover{
+    box-shadow: 2px 3px 8px rgb(190, 190, 190);
+    transform: scale(1.1);
+}
+.card_text{
+    display: block;
+    padding: 5px;
+}
+.card_text h2{
+    font-size: 20px;
+    color: #00c3ff;
+    font-weight: 600;
+    text-align: center;
+}
+.footer__card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.footer__card h3{
+    font-size: 16px;
+    color: #00003b;
+    font-weight: 500;
+}
+.footer__card p{
+    font-size: 14px;
+    color: #757575;
+    font-weight: 300;
+}
+.paginacion{
+    width: 100%;
+    display: block;
+    }
+.button{
+    width: 100%;
+    display: flex;
+    padding: 9px;
+    align-items: center;
+    justify-content: center;
+}
+.numeracion{
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.numpage{
+    width: 25%;
+    display: block;
+    color: white;
+    text-align: center;
+    font-size: 35px;
+    font-weight: 800;
+
+}
+.btn{
+    border: none;
+    margin: 5px 9px;
+    padding: 5px;
+    font-size: 25px;
+    height: 45px;
+    width: 30%;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 30px;
+}
+.prev{
+    background: #aac717;  
+    transition: .5s;  
+}
+.prev:hover{
+    background: #57da06;
+}
+.next{
+    background: #57da06;
+}
+.next:hover{
+    background: #aac717; 
+}
